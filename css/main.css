@@ -41,7 +41,7 @@
         
         main {
             padding: 2em;
-            border-top: solid 5px lightgrey;
+            margin-bottom: auto;
             overflow-y: scroll;
             overflow-x: hidden;
             -webkit-overflow-scrolling: touch;
@@ -59,15 +59,7 @@
             bottom: 0;
             right: 0px;
             left: 0px;
-            /* text-align: justify;
-            min-width: 500px; */
         }
-        /*         
-        nav::after {
-            display: inline-block;
-            width: 100%;
-        }
-         */
         
         nav a {
             flex: 1;
@@ -78,6 +70,10 @@
             border-bottom: solid 5px transparent;
             background: #6741c6;
             color: white;
+        }
+        
+        #current {
+            background-color: #5e40a7;
         }
         
         nav a:hover {
