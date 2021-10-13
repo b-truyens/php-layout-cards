@@ -1,0 +1,114 @@
+        /* * {} */
+        
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 0.9em;
+        }
+        
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        header {
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: solid 1px;
+            background: #7e51ef;
+        }
+        
+        header h2 {
+            color: white
+        }
+        
+        a {
+            color: white
+        }
+        
+        a.button {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 1em;
+            border-radius: 4px;
+        }
+        
+        header a.button:hover {
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        main {
+            padding: 2em;
+            border-top: solid 5px lightgrey;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        main a {
+            color: blue;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            right: 0px;
+            left: 0px;
+            /* text-align: justify;
+            min-width: 500px; */
+        }
+        /*         
+        nav::after {
+            display: inline-block;
+            width: 100%;
+        }
+         */
+        
+        nav a {
+            flex: 1;
+            text-align: center;
+            padding: 1em;
+            border: solid 1px #7e51ef;
+            border-top: solid 5px transparent;
+            border-bottom: solid 5px transparent;
+            background: #6741c6;
+            color: white;
+        }
+        
+        nav a:hover {
+            border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+            background-color: #8e6de0;
+        }
+        
+        nav i {
+            /* display: block; */
+            font-size: 2em;
+            padding-bottom: 1em;
+            color: white;
+            width: 100%;
+        }
+        
+        .img-right {
+            float: right;
+            width: 40vw;
+            max-width: 400px;
+            padding: 1em;
+        }
+        /* #content {
+            padding-top: 2em;
+        } */
+        
+        main a {
+            display: block;
+            padding-bottom: 1em;
+            font-size: larger;
+        }
+        
+        main p {
+            margin-top: 1em;
+        }
