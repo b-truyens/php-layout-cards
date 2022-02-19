@@ -95,7 +95,7 @@
             flex-direction: column;
             height: 65vh;
             margin-bottom: 5vh;
-            border: rgba(100, 100, 100, 0.3) solid 1px;
+            /* border: rgba(100, 100, 100, 0.3) solid 1px; */
             border-radius: 0.5vh;
             
             /* sets up hover state */
@@ -144,6 +144,8 @@
               background-size: cover;
               background-position: center center;
               height: 100%;
+              border-top-left-radius: 0.5vh;
+              border-top-right-radius: 0.5vh;
             }
 
 
