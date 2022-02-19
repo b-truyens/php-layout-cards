@@ -44,7 +44,26 @@
         }
         
         /* CONTENT */ /* -------------------------------------------------- */
-
+        #hero{
+            background-image: url(../img/blur-7.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        .hero-text{
+            color: white;
+            font-size: 2em;
+            font-weight: bold;
+            padding-left: 6em;
+        }
+        .hero-text h1{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
         .container {
             /* display: flex; */
             /* flex-direction: column; */
