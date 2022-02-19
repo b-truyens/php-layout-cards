@@ -1,16 +1,17 @@
-        /* * {} */
-        
+      
         body {
             margin: 0;
-            font-family: sans-serif;
+            font-family: system-ui;
             font-size: 0.9em;
         }
         
         .wrapper {
-            display: flex;
-            flex-direction: column;
+            /* display: flex; */
+            /* flex-direction: column; */
             height: 100vh;
         }
+        
+        /* HEADER */ /* ---------------------------------------------------- */
         
         header {
             padding: 1em;
@@ -18,7 +19,10 @@
             align-items: center;
             justify-content: space-between;
             border: solid 1px;
-            background: #7e51ef;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-image: url(../img/blur-7.jpg);
+            height: 8vh;
+            box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.3);
         }
         
         header h2 {
@@ -39,18 +43,144 @@
             background: rgba(0, 0, 0, 0.5);
         }
         
-        main {
-            padding: 2em;
-            margin-bottom: auto;
-            overflow-y: scroll;
-            overflow-x: hidden;
-            -webkit-overflow-scrolling: touch;
+        /* CONTENT */ /* -------------------------------------------------- */
+
+        .container {
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            height: 78vh;
+            overflow: scroll;
+            /* overflow-x: hidden; */
+            /* align-items: stretch; */
+
+        }
+
+        .band {
+            width: 90%;
+            max-width: 1500px;
+            margin: 0 auto;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            
+            display: grid;
+            
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap: 20px;
+        }
+
+         
+          
+          .card {
+            background: white;
+            text-decoration: none;
+            color: #444;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            
+            /* sets up hover state */
+
+            position: relative;
+            top: 0;
+            transition: all .1s ease-in;
+           }
+
+            .card:hover {
+              top: -2px;
+              box-shadow: 0 6px 30px rgba(0,0,0,0.3);
+            }
+            
+            article {
+              padding: 20px;
+              flex: 1;
+              
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            }
+            
+            h1 {
+              font-size: 20px;
+              margin: 0;
+              color: #333;
+            }
+            
+            p {
+              flex: 1;
+              line-height: 1.4;
+            }
+            
+            span {
+              font-size: 12px;
+              font-weight: bold;
+              color: #999;
+              text-transform: uppercase;
+              letter-spacing: .05em;
+              margin: 2em 0 0 0;
+            }
+            
+            .thumb {
+              padding-bottom: 60%;
+              background-size: cover;
+              background-position: center center;
+            }
+
+
+
+        /* .item {
+            display: grid;
+            align-items: center; 
+            justify-content: space-between;
+            padding: 1em;
+            border: solid 1px;
+            background: rgba(0, 0, 0, 0.1);
+            margin: 0.5em;
+            border-radius: 0.5em;
+            float: left;
+            width: 30%;
+
+        }
+
+        .item-r {
+            display: grid;
+            align-items: center; 
+            justify-content: space-between;
+            padding: 1em;
+            border: solid 1px;
+            background: rgba(0, 0, 0, 0.1);
+            margin: 0.5em;
+            border-radius: 0.5em;
+            float: right;
+            width: 30%;
+
+        } */
+        
+        /* RESPONSIVE */ /* -------------------------------------------------- */
+
+        @media screen and (min-width: 30em) {
+            .band {
+                grid-template-columns: 1fr 1fr;
+            }
         }
         
-        main a {
-            color: blue;
+        @media screen and (min-width: 60em) {
+            .band {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
-        
+
+        @media screen and (min-width: 60em) {
+            .item-1 {
+                grid-column: 1 / span 2;
+              }
+            }
+
+        /* NAVI */ /* -------------------------------------------------- */
+
         nav {
             display: flex;
             justify-content: center;
@@ -59,52 +189,67 @@
             bottom: 0;
             right: 0px;
             left: 0px;
+            height: 12vh;
+            box-shadow: -10px 0px 150px rgba(0, 0, 0, 1);
+            background-image: url(../img/blur-5.jpg);
         }
         
         nav a {
             flex: 1;
             text-align: center;
-            padding: 1em;
-            border: solid 1px #7e51ef;
-            border-top: solid 5px transparent;
-            border-bottom: solid 5px transparent;
-            background: #6741c6;
+            padding: 1vh;
+            /* border: solid 1px #1a181f; */
+            /* border-bottom: 1vh solid transparent; */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.1));
             color: white;
+            height: 9vh;
+            padding-top: 3vh;
         }
         
         #current {
-            background-color: #5e40a7;
+            background-color:rgba(0, 0, 0, 0.5);
+            border-bottom: 1vh solid rgba(0, 0, 0, 0.5);
+            /* border-top: 0.5em solid rgba(0, 0, 0, 0.5); */
+            height: 8vh;
+        }
+
+        #currentSet {
+            /* background-color: #444; */
+            border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+            /* border-top: 0.5em solid rgba(0, 0, 0, 0.5); */
         }
         
         nav a:hover {
-            border-bottom: 5px solid rgba(0, 0, 0, 0.2);
-            background-color: #8e6de0;
+            border-bottom: 1vh solid rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.4);
+            /* bottom: 1em; */
+            height: 8vh;
+
         }
         
         nav i {
             /* display: block; */
             font-size: 2em;
+            padding-top: 0.5em;
             padding-bottom: 1em;
             color: white;
             width: 100%;
         }
+
+        /* CONTENT FLOAT */ /* -------------------------------------------------- */
+
         
+        .txt-right {
+            text-align: right;
+        }
+
         .img-right {
             float: right;
-            width: 40vw;
+            /* width: 40vw;
             max-width: 400px;
-            padding: 1em;
+            padding: 1em; */
         }
-        /* #content {
-            padding-top: 2em;
-        } */
-        
-        main a {
-            display: block;
-            padding-bottom: 1em;
-            font-size: larger;
-        }
-        
-        main p {
-            margin-top: 1em;
-        }
+
+
+
+
