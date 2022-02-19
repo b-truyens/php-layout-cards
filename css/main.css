@@ -177,6 +177,12 @@
             .item-1 {
                 grid-column: 1 / span 2;
               }
+              .item-XL {
+                grid-column: 1 / span 3;
+              }
+              .item-XXL {
+                grid-column: 1 / span 4;
+              }
             }
 
         /* NAVI */ /* -------------------------------------------------- */
@@ -191,7 +197,7 @@
             left: 0px;
             height: 12vh;
             box-shadow: -10px 0px 150px rgba(0, 0, 0, 1);
-            background-image: url(../img/blur-5.jpg);
+            background-image: url(../img/blur-7.jpg);
         }
         
         nav a {
