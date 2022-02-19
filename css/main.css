@@ -1,7 +1,7 @@
       
-        html{
-            scroll-behavior: smooth;
-        }
+        /* html{
+            scroll-behavior: smooth !important;
+        } */
         body {
             margin: 0;
             font-family: system-ui;
@@ -167,7 +167,12 @@
               color: #999;
               text-transform: uppercase;
               letter-spacing: .05em;
-              margin: 2em 0.5em 0.5em;
+              margin: 2em 1.1em 0.5em;
+            }
+
+            span.r{
+                text-align: end;
+                margin-right: 1.2em;
             }
             
             .thumb {
