@@ -3,7 +3,6 @@
             margin: 0;
             font-family: system-ui;
             font-size: 0.9em;
-            /* background: url(../img/blur-7.jpg); */
 
         }
         
@@ -14,6 +13,8 @@
             position: relative;
             z-index: 1;
             overflow: hidden;
+
+            
         }
         
         .wrapper:before{
@@ -21,7 +22,8 @@
             position:absolute;
             left:0;
             top:0;
-            content: url(../img/blur-7.jpg);
+            content: url(../img/Blur-2.png);
+            /* align-content: stretch; */
             opacity:0.3;
             
         }
@@ -35,7 +37,7 @@
             border: solid 1px;
             background-color: rgba(0, 0, 0, 0.5);
             background-image: url(../img/blur-7.jpg);
-            background-repeat: no-repeat;
+            background-size: cover;
             /* background-size: auto;
             background-position: top left;  */
             height: 8vh;
@@ -272,6 +274,7 @@
             height: 12vh;
             box-shadow: -10px 0px 100px rgba(0, 0, 0, 1);
             background-image: url(../img/blur-7.jpg);
+            background-size: cover;
         }
         
         nav a {
